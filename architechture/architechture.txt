@@ -1,0 +1,13 @@
+
+Snake class
+-----------------------------------
+snakeBody: snakeCell[],
+headPosition: [int, int],
+length: number,
+
+
+SnakeCell class
+------------------------------------
+posX: number,
+posY: number,
+setCellPosition(x: number, y: number) {} // Sets posX and posY
