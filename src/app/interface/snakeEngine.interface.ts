@@ -12,4 +12,10 @@ export interface SnakeEngine {
     startGame(): void; // Creates a board.
     endGame(): void;
     pauseGame(): void;
+
+    // Records the movements of the snake and sends it to API
+    // The corninates in the board that the snake went to.
+    // The fruit cordinates generated.
+    // The data will be sent once the game ends.
+    recordSnakeMovements();
 }
