@@ -1,7 +1,9 @@
 import { Cordinate } from './cordinate.interface';
+import { Movement } from './movement.interface';
 
 export interface ISnake {
     snakeBody: SnakeCell[];
+    timePerCellMillis: number;
     length: number;
     headPosition: Cordinate;
 
@@ -10,7 +12,7 @@ export interface ISnake {
      * Allowed values are +1, -1 for both x and y
      * The whole co-ordinates in the snake body should be moved.
      */
-    moveSnake(x: number, y: number): void;
+    moveSnake(movement: Movement): void;
     /**
      * New snakecells will be generated at tail.
      * The fruit will get vanished.
@@ -23,7 +25,6 @@ export interface SnakeCell {
     id: string;
     position: Cordinate;
 
-    setCellPos(x: number, y: number): void; // Sets the position of the snakecell
 }
 
 export interface CellSize {
