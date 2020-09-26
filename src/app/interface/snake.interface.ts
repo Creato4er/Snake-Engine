@@ -1,6 +1,6 @@
 import { Cordinate } from './cordinate.interface';
 
-export interface Snake {
+export interface ISnake {
     snakeBody: SnakeCell[];
     length: number;
     headPosition: Cordinate;
@@ -24,4 +24,9 @@ export interface SnakeCell {
     position: Cordinate;
 
     setCellPos(x: number, y: number): void; // Sets the position of the snakecell
+}
+
+export interface CellSize {
+    numberOfCellsHeight: number;
+    numberOfCellsWidth: number;
 }
