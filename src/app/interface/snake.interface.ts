@@ -1,8 +1,9 @@
+import { SnakeList } from 'src/shared/linkedList.class';
 import { Cordinate } from './cordinate.interface';
 import { Movement } from './movement.interface';
 
 export interface ISnake {
-    snakeBody: SnakeCell[];
+    snakeBody: SnakeList;
     timePerCellMillis: number;
     length: number;
     headPosition: Cordinate;
@@ -22,9 +23,9 @@ export interface ISnake {
 
 export interface SnakeCell {
     // Unique ID for each snake cell.
-    id: string;
+    id: number;
     position: Cordinate;
-
+    movement: Movement;
 }
 
 export interface CellSize {

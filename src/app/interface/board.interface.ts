@@ -1,13 +1,13 @@
 import { Cordinate } from './cordinate.interface';
 import { Fruit } from './fruit.interface';
-import { Snake } from './snake.interface';
+import { ISnake } from './snake.interface';
 import { UserInput } from './userInput.interface';
 
 export interface Board {
     size: Cordinate;
     // List of fruits visible on the board.
     fruits: Cordinate[];
-    snake: Snake;
+    snake: ISnake;
 
     // Generates a random fruit position
     generateNewFruitPosition(): Cordinate;

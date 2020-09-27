@@ -13,3 +13,9 @@ use the arrow keys to move the snake around.
 5. Once you pass one level you will be able to go to the next level.
 6. The game should be based on retro theme.
 7. Game with a changing theme as you level up.
+
+
+// Architechture:
+
+What data structure should I use for a snake game?
+LinkedList
